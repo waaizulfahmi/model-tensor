@@ -6,12 +6,14 @@ import uuid
 import requests
 import shutil
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from sklearn.model_selection import GridSearchCV
 from sklearn.neighbors import KNeighborsClassifier
 import joblib
 from keras_facenet import FaceNet
 
 app = Flask(__name__)
+CORS(app)
 
 # Constants
 url = "https://nurz.site/api"
