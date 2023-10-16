@@ -390,5 +390,5 @@ def refresh_model():
 
 
 if __name__ == "__main__":
-    server_port = os.environ.get("PORT", "8080")
-    app.run(debug=True, port=server_port, host="127.0.0.1")
+    #server_port = os.environ.get("PORT", "8080")
+    app.run(port=8080, host="0.0.0.0")
